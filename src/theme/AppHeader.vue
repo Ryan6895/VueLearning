@@ -1,17 +1,15 @@
 <template lang="html">
   <nav class="nav has-shadow">
     <div class="container">
-      <a href="/">
+      <router-link to="/category/front-end" exact>
           <img src="http://bit.ly/vue-img" alt="Vue SPA" />
-        </a>
+        </router-link>
+        <router-link class='nav-item is-tab' to="/category/front-end" exact>
+          Home
+        </router-link>
+        <router-link class='nav-item is-tab' to="/login">
+          Login
+        </router-link>
     </div>
   </nav>
 </template>
-
-<script>
-export default {
-}
-</script>
-
-<style lang="css">
-</style>
